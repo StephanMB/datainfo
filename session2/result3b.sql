@@ -1,8 +1,6 @@
-SELECT DISTINCT p.pid FROM Person p, Acts a,  
-	WHERE a.pid = p.pid 
-	AND a.mid IN (
-		SELECT m.mid FROM Movie m 
-			WHERE m.name = 'Back to the Future'
-	)
-);
+SELECT DISTINCT p.pid FROM Person p,
+	JOIN Acts a ON (a.pid = a.pid),
+	JOIN Movie m ON (m.mid = a.mid),
+	WHERE m.name = 'Back to the Future'
+;
 

@@ -1,0 +1,2 @@
+﻿INSERT INTO Exemplaar VALUES (2,1,1234,8);
+INSERT INTO Exemplaar VALUES (3,1,1234,8);
